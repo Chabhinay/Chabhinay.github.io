@@ -8,5 +8,21 @@
     <p>This is my portfolio.</p>
 </body>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/bb591a89-c6e6-4fd0-b5dc-fc38a523e1f9/webchat/config.js" defer></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with bot",
+      "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+      "botId": "bb591a89-c6e6-4fd0-b5dc-fc38a523e1f9",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "bb591a89-c6e6-4fd0-b5dc-fc38a523e1f9",
+      "webhookId": "9a56b092-3f73-4707-8e35-159e1ddd11bc",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
 </html>
