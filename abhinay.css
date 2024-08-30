@@ -114,7 +114,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    margin-left: 80px;
+    margin-left: 150px;
+    margin-right:150px
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
 }
 
 .course-card {
