@@ -1,18 +1,130 @@
+/* abhinay.css */
+/* Combined original styles + new hover effect for certificates */
+
+/* Scroll container */
+.card-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    overflow-x: auto;
+    padding: 32px 0;
+    background: #0F0E17;
+    scrollbar-width: thin;
+    scrollbar-color: #58C45A #171717;
+}
+.card-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.card-scroll::-webkit-scrollbar-thumb {
+    background: #58C45A;
+    border-radius: 4px;
+}
+.card-scroll::-webkit-scrollbar-track {
+    background: #171717;
+}
+
+/* Card (magic hover) styling */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+    --background: linear-gradient(135deg, #171717 60%, #58C45A 100%);
+        width: 20vw;
+        height: 30vw;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    flex: 0 0 auto;
+    box-shadow: 0px 0px 8px 2px #58C45A55;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info {
+    background: #0F0E17;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: .7rem;
+    transition: color 0.6s ease, background 0.4s ease;
+    color: #F3FFFF;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 8px #58C45A33;
+}
+
+.card-info h1 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+    transition: opacity .35s ease;
+    color: #58C45A;
+}
+
+.card-info p {
+    font-size: 0.95em;
+    margin: 0;
+    opacity: 0; /* hidden initially */
+    transition: opacity .35s ease, color .35s ease;
+    color: #F3FFFF;
+}
+
+/* Hover Effect: provider (h1) fades out, certificate title (p) fades in */
+.card:hover::after {
+    opacity: 0;
+}
+
+.card:hover .card-info h1 {
+    opacity: 0; /* hide provider */
+}
+
+.card:hover .card-info p {
+    opacity: 1; /* show certificate title */
+    color: #58C45A;
+    transition: color 1s;
+}
+
+/* Keep existing card styles (if any) from previous setup removed to avoid conflict */
+
+/* --- previous global styles --- */
 body {
     font-family: Arial, sans-serif;
     background-color: #0F0E17;
     color: #F3FFFF;
     margin: 0;
     padding: 0;
-
 }
+
 .a {
     color: #F3FFFF;
     text-decoration: none;
 }
+
 .project{
   text-align: center;
-  border: 5px ;
   border: 5px ;
   border-color:#58C45A;
 }
@@ -47,6 +159,7 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +171,6 @@ button {
 .navbar-links ul {
     list-style: none;
     overflow: hidden;
-
 }
 
 .navbar-links li {
@@ -91,9 +203,8 @@ button {
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     color: #58C45A;
-
-
 }
+
 .navbar-links a {
     color: #F3FFFF;
     text-decoration: none;
@@ -127,13 +238,12 @@ button {
     box-shadow: 0 4px 6px #58C45A;
     width: 80%;
     transition: transform 0.3s ease;
-    
 }
 
 .course-card:hover {
     transform: translateY(-10px);
-    
 }
+
 .progress-bar {
     height: 10px;
     background-color: #e9ecef;
@@ -146,6 +256,7 @@ button {
     background-color: #58C45A;
     border-radius: 5px;
 }
+
 #hehehe{
     float:left;
     width:49%;
@@ -154,102 +265,41 @@ button {
     float:left;
     width:49%;
 }
+
 .contact{
     text-align: center;
-
 }
+
 .contact-logo {
     width: 1;
     height: 1;
 }
+
 .logo-svg {
     margin-right: 10px;
     color: #F3FFFF;
 }
+
 #graph-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust as needed */
 }
-.card {
-  width: 190px;
-  height: 254px;
-  background: #171717;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  box-shadow: 0px 0px 3px 1px #00000088;
-  cursor: pointer;
+
+/* Certificates section links */
+.card-scroll a {
+  text-decoration: none;
+  color: #F3FFFF; /* or your preferred color */
 }
 
-.card .content {
-  border-radius: 5px;
-  background: #171717;
-  width: 186px;
-  height: 250px;
-  z-index: 1;
-  padding: 20px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Footer/social icons links */
+.last a {
+  text-decoration: none;
+  color: #F3FFFF;
 }
 
-.content::before {
-  opacity: 0;
-  transition: opacity 300ms;
-  content: " ";
-  display: block;
-  background: white;
-  width: 5px;
-  height: 50px;
-  position: absolute;
-  filter: blur(50px);
+a {
+  text-decoration: none;
+  color: inherit; /* makes links use the surrounding text color */
 }
-
-.card:hover .content::before {
-  opacity: 1;
-}
-
-.card::before {
-  opacity: 0;
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 80px;
-  height: 360px;
-  background: linear-gradient(#58C45A, #58C45A);
-  transition: opacity 300ms;
-  animation: rotation_9018 8000ms infinite linear;
-  animation-play-state: paused;
-}
-
-.card:hover::before {
-  opacity: 1;
-  animation-play-state: running;
-}
-
-.card::after {
-  position: absolute;
-  content: " ";
-  display: block;
-  width: 250px;
-  height: 360px;
-  background: #0F0E17;
-  backdrop-filter: blur(50px);
-}
-
-@keyframes rotation_9018 {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-

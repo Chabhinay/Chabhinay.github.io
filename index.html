@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="abhinay.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body><!-- navigation bar-->
+<body>
+    <!-- navigation bar-->
     <nav class="navbar">
-        <a href="#" class="toggle-button">
+        <a href="#" class="toggle-button" aria-label="Toggle navigation">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -17,159 +19,230 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="#home-section">Home</a></li>
-                <!-- <li><a href="#">About</a></li> -->
                 <li><a href="#skills-section">Skills</a></li>
-                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#project-section">Projects</a></li>
                 <li><a href="#Certificates">Certificates</a></li>
                 <li><a href="#reachout-section">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <!-- main section home-->
 
+    <!-- main section home-->
     <main class="home-section" id="home-section">
         <h1>ABHINAY</h1>
-        <h2>Software Devloper</h2>
-        <p> I'm Abhinay , a software developer.I'm also a Tech enthusiast in Cloud, DevOps.</p>
+        <h2>Software Developer</h2>
+        <p> I'm Abhinay, a software developer. I'm also a Tech enthusiast in Cloud, DevOps.</p>
         <p> I am a Web Developer that loves tinkering with Artificial Intelligence and Machine Learning</p>
-        <a href="https://drive.google.com/file/d/1tz2A0xlqlCrwu01kbnrk-okPPwPuYsJE/view?usp=sharing">
+        <a href="https://drive.google.com/file/d/1tz2A0xlqlCrwu01kbnrk-okPPwPuYsJE/view?usp=sharing" target="_blank" rel="noopener">
             <button>view cv</button>
         </a>
     </main>
+
     <div class="skills" id="skills-section">
         <h1 align="center">Skills</h1>
         <p align="center">
-            <a href="https://skillicons.dev">
-              <img src="https://skillicons.dev/icons?i=py,git,docker,postman,tensorflow,gcp,java,html,css" />
+            <a href="https://skillicons.dev" target="_blank" rel="noopener">
+              <img src="https://skillicons.dev/icons?i=py,git,docker,postman,tensorflow,gcp,java,html,css" alt="skills icons" />
             </a>
-          </p>
+        </p>
     </div>
-    
 
     <!-- project section-->
     <div class="project" id="project-section">
         <h1 align="center">Projects</h1>
         <div class="left-column">
             <div class="course-cards">
+
                 <div class="course-card">
                     <div class="course-info">
                         <div class="never-waste-container">
-                            <h2>AI-Text Summarizer</h2>  
-                            <p>Devlopedv an AI-powered text summarizer using Node.js, Express, and Hugging Face API for backendfunctionality.Tested and integrated APIs using Postman for seamless backend communication.</p>
+                            <h2>AI-Text Summarizer</h2>
+                            <p>Developed an AI-powered text summarizer using Node.js, Express, and Hugging Face API for backend functionality. Tested and integrated APIs using Postman for seamless backend communication.</p>
                             <button onclick="window.location.href='https://github.com/Chabhinay/AI-Text-Summarizer';">View</button>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <div class="course-info">
-                            <div class="never-waste-container">
-                                <h2>SMS Text Classifier</h2>  
-                                <p>Developed a machine learning model to classify SMS texts as spam or not.</p>
-                                <p>Python, TensorFlow, Pandas, NumPy, and Keras were used.Implemented machine learning algorithms Dense,Conv2D, Flatten, Dropout, MaxPooling2D, Sequential, ImageDataGenerator.</p>
-                                <button onclick="window.location.href='https://github.com/Chabhinay/SMS-Text-Classifier';">View</button>
-                                </a>
-                              </div>
-                            </div>
-                        </div>
-                <div class="course-card">
-                    <div class="course-info">
-                        <div class="never-waste-container">
-                            <h2>Instagram clone webpage</h2>  
-                            <p>Created a webpage using HTML,CSS. Javascript and VS Code of instagram page clone</p>
-                            <p>Webpage consists of instagram home page with two post and few stories</p>
-                            <button onclick="window.location.href='https://github.com/Chabhinay/Instagram-clone-webpage';">View</button>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                  <div class="course-card">
-                        <div class="course-info">
-                           <div class="never-waste-container">
-                            <h2>Maze Generator</h2>  
-                            <p>Maze Generator using Python. Using modules pygame and random</p>
-                            <p>Making a maze out of a grid using random function and solving it using backtracting method </p>
-                            <button onclick="window.location.href='https://github.com/Chabhinay/Maze-Generator';">View</button>
-                            </a>
-                        </div>
-                    </div>
-                  </div>
-                    <div class="course-card">
-                       <div class="course-info">
-                         <div class="never-waste-container">
-                            <h2>cats and dogs classification</h2>  
-                            <p>machine learning project of cats and dogs Classification</p>
-                            <p>Using Clustering algorithms and modules Tensorflow, Keras, Numpy, Matplotlib</p>
-                            <button onclick="window.location.href='https://github.com/Chabhinay/cats-and-dogs-classification-';">View</button>
-                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="never-waste-container">
+                            <h2>SMS Text Classifier</h2>
+                            <p>Developed a machine learning model to classify SMS texts as spam or not. Python, TensorFlow, Pandas, NumPy, and Keras were used.</p>
+                            <button onclick="window.location.href='https://github.com/Chabhinay/SMS-Text-Classifier';">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="never-waste-container">
+                            <h2>Instagram clone webpage</h2>
+                            <p>Created a webpage using HTML, CSS, and JavaScript that clones basic Instagram layout.</p>
+                            <button onclick="window.location.href='https://github.com/Chabhinay/Instagram-clone-webpage';">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="never-waste-container">
+                            <h2>Maze Generator</h2>
+                            <p>Maze Generator using Python. Uses pygame and random to generate and solve mazes.</p>
+                            <button onclick="window.location.href='https://github.com/Chabhinay/Maze-Generator';">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-info">
+                        <div class="never-waste-container">
+                            <h2>cats and dogs classification</h2>
+                            <p>Machine learning project classifying cats and dogs using TensorFlow and Keras.</p>
+                            <button onclick="window.location.href='https://github.com/Chabhinay/cats-and-dogs-classification-';">View</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div><!-- Certificates Section -->
-<div class="Certificates" id="reachout-section">
-  <h1 align="center">Certificates</h1>
-  <div class="card-scroll">
-    
-    <a href="https://example.com/certificate1" target="_blank">
-      <div class="card">
-        <div class="content">
-          <span>Certificate 1</span>
-        </div>
-      </div>
-    </a>
+    </div>
 
-    <a href="https://example.com/certificate2" target="_blank">
-      <div class="card">
-        <div class="content">
-          <span>Certificate 2</span>
-        </div>
-      </div>
-    </a>
+    <!-- Certificates Section -->
+    <section class="Certificates" id="Certificates">
+      <h1 align="center">Certificates</h1>
 
-    <a href="https://example.com/certificate3" target="_blank">
-      <div class="card">
-        <div class="content">
-          <span>Certificate 3</span>
-        </div>
-      </div>
-    </a>
+      <div class="card-scroll">
+        <!-- each card is a link; card-info contains provider (h1) and title (p) -->
 
-    <a href="https://example.com/certificate4" target="_blank">
-      <div class="card">
-        <div class="content">
-          <span>Certificate 4</span>
-        </div>
-      </div>
-    </a>
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/ff899494-015e-4b93-9065-55de6ca493b0" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Build Infrastructure with Terraform on Google Cloud Skill Badge</p>
+            </div>
+          </div>
+        </a>
 
-  </div>
-</div>
+        <a class="card-link" href="https://www.freecodecamp.org/certification/fcc29e50936-17dc-43ee-9c55-c7335d453828/machine-learning-with-python-v7" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Free Code Camp</h1>
+              <p>Machine Learning with Python Certification</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/223c62e5-f942-44f5-8f1c-75066d5da33d" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Use APIs to Work with Cloud Storage Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.cert.devtown.in/verify/6QzaM" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Devtown</h1>
+              <p>Build Responsive Websites with HTML, CSS, and JavaScript</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/93683eab-f000-4529-bd65-a072bb1eff1f" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Develop Serverless Apps with Firebase Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://drive.google.com/file/d/1GRoC5MZsuAAJzl9aM3y0dnwnNNQxPwre/view" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Postman</h1>
+              <p>Postman API fundamentals</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/92560bd2-0893-4d89-b418-e1b6d4ec10a5" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Store, Process, and Manage Data on Google Cloud - Console Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/cb1233c6-cd27-43f7-a74f-4caa10c51f3d" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Develop GenAI Apps with Gemini and Streamlit Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/b04fc59f-c6d3-46c9-9712-384e7911d785" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>App Engine: 3 Ways Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/cef49306-0306-4003-84ec-64e3ba993a79" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Tag and Discover BigLake Data</p>
+            </div>
+          </div>
+        </a>
+
+        <a class="card-link" href="https://www.credly.com/earner/earned/share/d62fb259-44be-4bb0-9145-8c00598b0181" target="_blank" rel="noopener">
+          <div class="card">
+            <div class="card-info">
+              <h1>Google Cloud</h1>
+              <p>Get Started with Pub/Sub Skill Badge</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- add more cards as needed -->
+      </div>
+    </section>
 
     <!-- reachout-section -->
-<div>
     <div class="contact" id="reachout-section">
-        <h1 > ABHINAY</h1>
+        <h1>ABHINAY</h1>
         <h2>reach out</h2>
         <div class="logo">
-            <a href="https://github.com/Chabhinay">
+            <a href="https://github.com/Chabhinay" aria-label="GitHub" target="_blank" rel="noopener">
+                <!-- GitHub SVG -->
                 <svg class="logo-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="25" width="25" xmlns="http://www.w3.org/2000/svg">
                     <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
                 </svg>
             </a>
-            <a href="https://x.com/Chabhinay436">
+            <a href="https://x.com/Chabhinay436" aria-label="X/Twitter" target="_blank" rel="noopener">
+                <!-- X SVG -->
                 <svg class="logo-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
             </a>
-            <a href="https://linkedin.com/in/chabhinay/">
+            <a href="https://linkedin.com/in/chabhinay/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <!-- LinkedIn SVG -->
                 <svg class="logo-svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
             </a>
-            <a href="mailto:choutapallyabhinay@gmail.com">
+            <a href="mailto:choutapallyabhinay@gmail.com" aria-label="Email">
+                <!-- Mail SVG -->
                 <svg class="logo-svg" stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="25" width="25" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg>
             </a>
         </div>
     </div>
-</div>
+
 <script src="abhinay.js"></script>
 <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
@@ -199,4 +272,5 @@
       "themeColor": "#2563eb"
   });
 </script>
-</body></html>
+</body>
+</html>
