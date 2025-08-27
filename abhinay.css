@@ -172,3 +172,27 @@ button {
     align-items: center;
     height: 100vh; /* Adjust as needed */
 }
+/* Horizontal Scroll Container */
+.card-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;       /* enables horizontal scroll */
+  padding: 20px;
+  scroll-snap-type: x mandatory;  /* snap cards nicely */
+}
+
+.card-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.card-scroll::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.card-scroll a {
+  flex: 0 0 auto;  /* prevents shrinking */
+  scroll-snap-align: start;
+  text-decoration: none;
+}
+
