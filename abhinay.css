@@ -172,27 +172,84 @@ button {
     align-items: center;
     height: 100vh; /* Adjust as needed */
 }
-/* Horizontal Scroll Container */
-.card-scroll {
+.card {
+  width: 190px;
+  height: 254px;
+  background: #171717;
   display: flex;
-  gap: 20px;
-  overflow-x: auto;       /* enables horizontal scroll */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+}
+
+.card .content {
+  border-radius: 5px;
+  background: #171717;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
   padding: 20px;
-  scroll-snap-type: x mandatory;  /* snap cards nicely */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-scroll::-webkit-scrollbar {
-  height: 8px;
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: white;
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
 }
 
-.card-scroll::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 4px;
+.card:hover .content::before {
+  opacity: 1;
 }
 
-.card-scroll a {
-  flex: 0 0 auto;  /* prevents shrinking */
-  scroll-snap-align: start;
-  text-decoration: none;
+.card::before {
+  opacity: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 360px;
+  background: linear-gradient(#58C45A, #58C45A);
+  transition: opacity 300ms;
+  animation: rotation_9018 8000ms infinite linear;
+  animation-play-state: paused;
 }
+
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.card::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 250px;
+  height: 360px;
+  background: #0F0E17;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
